@@ -80,7 +80,6 @@ function Validator(form) {
       return true;
     };
     field.validity = new Validity();
-    console.debug("Added a validator (%o) on %o", this, field);
   }
   ['input', 'select', 'textarea'].forEach(function(tag) {
     var elements = form.getElementsByTagName(tag);
